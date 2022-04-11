@@ -73,6 +73,7 @@
             <div class="top-right links">
                 @auth
                     <a href="{{ url('/home') }}">Home</a>
+                    <a href="{{ url('https://github.com/ayodejidev/ayo-shopping-cart') }}">GitHub</a>
                 @else
                     <a href="{{ route('login') }}">Login</a>
 
