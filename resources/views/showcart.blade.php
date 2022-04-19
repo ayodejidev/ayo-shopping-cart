@@ -73,8 +73,12 @@
                             <td>&nbsp;</td>
                             <td>Total</td>
                             <td><input type="text" name="amount" id="amount" value=""></td>
-                            <td><a href="{{ url('/myorder/') }}"
-                                    style="background-color: #0abf53; padding: 1vw; color: #fff">Proceed to Payment</a></td>
+                            <td>
+                                <!--<a href="{{ url('/myorder/') }}"
+                                        style="background-color: #0abf53; padding: 1vw; color: #fff">Proceed to Payment</a>-->
+                                <button type="submit" style="background-color: #0abf53; padding: 1vw; color: #fff">Proceed
+                                    to payment</button>
+                            </td>
                         </tr>
             </form>
 

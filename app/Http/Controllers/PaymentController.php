@@ -63,6 +63,8 @@ class PaymentController extends Controller
         ];
 
         $responseData = $this->service->makeCardPayment($payload);
+        //logger('Response: ', (array)$responseData);
+        //dd($responseData);
 
         if ($responseData && isset($responseData->errorCode)) {
             return redirect()->back()->with('error', $responseData->message);
